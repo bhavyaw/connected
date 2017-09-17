@@ -1,6 +1,8 @@
+/* tslint:disable */
 /**
  * This script is runned automatically after your first npm-install.
  */
+
 const _prompt = require("prompt")
 const { mv, rm, which, exec } = require("shelljs")
 const replace = require("replace-in-file")
@@ -113,11 +115,11 @@ for (let i = 0; i < lines; i++) {
 console.log(colors.yellow("Hi! I'm setting things up for you!!"))
 
 // Remove .git folder
-rm("-Rf", path.resolve(__dirname, "..", ".git"))
-console.log("\r\n", "Removed .git directory", "\r\n")
+rm("-Rf", path.resolve(__dirname, "..", ".git"));
+console.log("\r\n", "Removed .git directory", "\r\n");
 
 // Remove files
-const filesRm = ["tools/init.ts", ".all-contributorsrc", ".gitattributes"]
+const filesRm = ["tools/init.ts"]
 const pathsRm = filesRm.map(f => path.resolve(__dirname, "..", f))
 rm(pathsRm)
 console.log(`\r\nRemoved files: ${filesRm.toString()}\r\n`)

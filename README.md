@@ -1,0 +1,3 @@
+A simple JavaScript library to get notified when your app goes offline or online. 
+
+More details coming soon...

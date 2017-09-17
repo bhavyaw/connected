@@ -5,5 +5,14 @@
   ],
   "rulesDirectory": [
     "dist/src"
-  ]
+  ],
+  "rules": {
+    "no-unused-variable": true,
+    "no-console": [true, "log", "error"],
+    "quotemark": [true, "double", "avoid-escape"],
+    "no-var-keyword": true,
+    "indent": [true, "tabs"],
+    "prefer-const": true,
+    "no-duplicate-imports": true
+  }
 }

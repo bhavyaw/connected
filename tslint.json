@@ -8,7 +8,7 @@
   ],
   "rules": {
     "no-unused-variable": true,
-    "no-console": [true, "log", "error"],
+    "no-console": [false, "log", "error"],
     "quotemark": [true, "double", "avoid-escape"],
     "no-var-keyword": true,
     "indent": [true, "tabs"],

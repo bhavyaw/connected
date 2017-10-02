@@ -1,4 +1,10 @@
-// Import here Polyfills if needed. Recommended core-js (npm i -D core-js)
-// import "core-js/fn/array.find"
-// ...
-export default class DummyClass {}
+import PubSub from "./pubSub"
+
+class Connected extends PubSub {
+  constructor() {
+    super()
+    console.log(this)
+  }
+}
+
+new Connected()
